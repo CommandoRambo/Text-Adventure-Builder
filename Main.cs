@@ -32,7 +32,10 @@ namespace AdventureBuilder
         #region METHODS
         private void butCreate_Click(object sender, EventArgs e)
         {
-
+            FrmBuilder builder = new FrmBuilder();
+            builder.Show();
+            builder.Focus();
+            this.Hide();
         }
 
         private void butOpen_Click(object sender, EventArgs e)

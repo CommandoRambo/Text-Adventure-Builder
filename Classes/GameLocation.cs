@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdventureBuilder
 {
-    class GameLocation
+    public class GameLocation
     {
         #region VARIABLES
 

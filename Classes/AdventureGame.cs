@@ -13,6 +13,8 @@ namespace AdventureBuilder
 
         private string _name;
         private string _description;
+        private int _majorVersion;
+        private int _minorVersion;
         private Guid _gameId;
         private bool _hasTime;
         private EnGenre _genre;
@@ -31,6 +33,8 @@ namespace AdventureBuilder
         #region PROPERTIES
         public string name { get { return _name; } set { _name = value; } }
         public string Description { get { return _description; } set { _description = value; } }
+        public int MajorVersion { get { return _majorVersion; } set { _majorVersion = value; } }
+        public int MinorVersion { get { return _minorVersion; } set { _minorVersion = value; } }
         public Guid GameId { get { return _gameId; } set { _gameId = value; } }
         public bool HasTime { get { return _hasTime; } set { _hasTime = value; } }
         public EnGenre Genre { get { return _genre; } set { _genre = value; } }

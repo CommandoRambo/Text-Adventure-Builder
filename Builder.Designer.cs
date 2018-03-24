@@ -36,9 +36,9 @@
             // 
             // StatusBar
             // 
-            this.StatusBar.Location = new System.Drawing.Point(0, 539);
+            this.StatusBar.Location = new System.Drawing.Point(0, 739);
             this.StatusBar.Name = "StatusBar";
-            this.StatusBar.Size = new System.Drawing.Size(784, 22);
+            this.StatusBar.Size = new System.Drawing.Size(984, 22);
             this.StatusBar.SizingGrip = false;
             this.StatusBar.TabIndex = 0;
             this.StatusBar.Text = "statusStrip1";
@@ -47,7 +47,7 @@
             // 
             this.MainMenu.Location = new System.Drawing.Point(0, 0);
             this.MainMenu.Name = "MainMenu";
-            this.MainMenu.Size = new System.Drawing.Size(784, 24);
+            this.MainMenu.Size = new System.Drawing.Size(984, 24);
             this.MainMenu.TabIndex = 1;
             this.MainMenu.Text = "menuStrip1";
             // 
@@ -56,7 +56,7 @@
             this.treeGame.Dock = System.Windows.Forms.DockStyle.Left;
             this.treeGame.Location = new System.Drawing.Point(0, 49);
             this.treeGame.Name = "treeGame";
-            this.treeGame.Size = new System.Drawing.Size(200, 490);
+            this.treeGame.Size = new System.Drawing.Size(200, 690);
             this.treeGame.TabIndex = 3;
             // 
             // MenuBar
@@ -64,14 +64,14 @@
             this.MenuBar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.MenuBar.Location = new System.Drawing.Point(0, 24);
             this.MenuBar.Name = "MenuBar";
-            this.MenuBar.Size = new System.Drawing.Size(784, 25);
+            this.MenuBar.Size = new System.Drawing.Size(984, 25);
             this.MenuBar.TabIndex = 4;
             this.MenuBar.Text = "toolStrip1";
             // 
             // FrmBuilder
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(984, 761);
             this.Controls.Add(this.treeGame);
             this.Controls.Add(this.StatusBar);
             this.Controls.Add(this.MenuBar);
@@ -80,10 +80,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MainMenu;
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.MinimumSize = new System.Drawing.Size(1000, 800);
             this.Name = "FrmBuilder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Builder";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmBuilder_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

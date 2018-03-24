@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.butUpdates = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -38,7 +40,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
-            this.butUpdates = new System.Windows.Forms.Button();
             this.OpenFile = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,6 +57,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(584, 65);
             this.panel1.TabIndex = 0;
+            // 
+            // butUpdates
+            // 
+            this.butUpdates.FlatAppearance.BorderSize = 0;
+            this.butUpdates.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butUpdates.Location = new System.Drawing.Point(244, 40);
+            this.butUpdates.Name = "butUpdates";
+            this.butUpdates.Size = new System.Drawing.Size(100, 23);
+            this.butUpdates.TabIndex = 2;
+            this.butUpdates.Text = "No Updates";
+            this.butUpdates.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -159,17 +171,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Recent";
             // 
-            // butUpdates
-            // 
-            this.butUpdates.FlatAppearance.BorderSize = 0;
-            this.butUpdates.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butUpdates.Location = new System.Drawing.Point(244, 40);
-            this.butUpdates.Name = "butUpdates";
-            this.butUpdates.Size = new System.Drawing.Size(100, 23);
-            this.butUpdates.TabIndex = 2;
-            this.butUpdates.Text = "No Updates";
-            this.butUpdates.UseVisualStyleBackColor = true;
-            // 
             // OpenFile
             // 
             this.OpenFile.FileName = "openFileDialog1";
@@ -183,6 +184,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(600, 400);
             this.MinimizeBox = false;

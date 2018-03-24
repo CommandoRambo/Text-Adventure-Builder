@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MainIcon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -85,6 +88,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Fonts\segoeui.ttf" />
+    <None Include="Fonts\segoeuib.ttf" />
+    <None Include="Fonts\segoeuii.ttf" />
+    <None Include="Fonts\segoeuil.ttf" />
+    <None Include="Fonts\segoeuisl.ttf" />
+    <None Include="Fonts\segoeuiz.ttf" />
+    <None Include="Fonts\seguibl.ttf" />
+    <None Include="Fonts\seguibli.ttf" />
+    <None Include="Fonts\seguili.ttf" />
+    <None Include="Fonts\seguisb.ttf" />
+    <None Include="Fonts\seguisbi.ttf" />
+    <None Include="Fonts\seguisli.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -99,11 +114,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\Header.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainIcon.ico" />
     <Content Include="Manual.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Stylesheets\Manual.css" />
+    <Content Include="Stylesheets\Manual.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -20,6 +20,9 @@ namespace AdventureBuilder
         public FrmBuilder()
         {
             InitializeComponent();
+
+
+            
         }
         #endregion
 
@@ -31,5 +34,9 @@ namespace AdventureBuilder
 
         #endregion
 
+        private void FrmBuilder_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
