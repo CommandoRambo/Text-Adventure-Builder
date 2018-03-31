@@ -16,7 +16,11 @@ namespace AdventureBuilder
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+#if DEBUG
+            Application.Run(new FrmBuilder());
+#else
             Application.Run(new FrmMain());
+#endif
         }
     }
 }

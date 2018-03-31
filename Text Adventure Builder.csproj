@@ -55,6 +55,18 @@
     <Compile Include="Builder.Designer.cs">
       <DependentUpon>Builder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Children\GameLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Children\GameLocation.Designer.cs">
+      <DependentUpon>GameLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Children\GameObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Children\GameObject.Designer.cs">
+      <DependentUpon>GameObject.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Actions.cs" />
     <Compile Include="Classes\AdventureGame.cs" />
     <Compile Include="Classes\Conversation.cs" />
@@ -70,13 +82,28 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Player.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Player.Designer.cs">
+      <DependentUpon>Player.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Builder.resx">
       <DependentUpon>Builder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Children\GameLocation.resx">
+      <DependentUpon>GameLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Children\GameObject.resx">
+      <DependentUpon>GameObject.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Player.resx">
+      <DependentUpon>Player.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,6 +148,10 @@
     <Content Include="Manual.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\pin.png" />
+    <None Include="Resources\action.png" />
+    <None Include="Resources\gender-neutral-user.png" />
+    <None Include="Resources\book.png" />
     <Content Include="Stylesheets\Manual.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

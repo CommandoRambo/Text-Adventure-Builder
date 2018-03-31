@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Text Adventure Builder")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("JRV Solutions")]
+[assembly: AssemblyCompany("JRV Software")]
 [assembly: AssemblyProduct("Text Adventure Builder")]
-[assembly: AssemblyCopyright("Copyright © JRV Solutions 2018")]
+[assembly: AssemblyCopyright("Copyright © JRV Software 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

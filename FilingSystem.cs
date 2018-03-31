@@ -12,16 +12,13 @@ namespace AdventureBuilder
     public class FilingSystem
     {
         #region VARIABLES
-        public struct Header           // 10 bytes in total.
-        {
-            public static readonly byte[] Tag = { 0x54, 0x41, 0x42 };         // 3 bytes = TAB.
-            public byte Major;         // 1 byte.
-            public byte Minor;         // 1 byte.
-            public byte Flags;         // 1 byte.
-            public byte[] Size;        // 4 bytes.
-        }
+        private static readonly byte[] _tag = { 0x54, 0x41, 0x42 };
+        private static byte _major;
+        private static byte _minor;
+        private static byte _flags;
+        private static byte[] _size;
 
-        private static char[] _tag;
+        private static int _headerSize = 10;
 
         private static string _filename;
         private static string _directory;
@@ -44,12 +41,12 @@ namespace AdventureBuilder
             _reader = new StreamReader(file);
 
             // Check header tag.
-            _reader.Read(_tag, 0, 3);
+            // _reader.Read(_tag, 0, 3);
 
-            if (_tag[0] != Header.Tag[0])
-            {
-                MessageBox.Show("Wrong file type.", "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //if (_tag[0] != Header.Tag[0])
+            //{
+            //    MessageBox.Show("Wrong file type.", "Error...", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
 
             // Check major and minor version numbers.
 
@@ -66,7 +63,13 @@ namespace AdventureBuilder
 
         public static void CreateDataFile(string file)
         {
+            _writer = new StreamWriter(file);
 
+
+
+            // _writer.Write(Header.Tag);
+
+            _writer.Dispose();
         }
         #endregion
 
